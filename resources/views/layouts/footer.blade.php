@@ -33,7 +33,7 @@
           /></a>
           <a href="#"><img src="../../img/viber.svg" alt="" class="icon" /></a>
         </div>
-        <a href="#" class="footer__arrowTop"
+        <a href="#body" class="footer__arrowTop"
           ><img src="../../img/arrowtop.svg" alt="" class="icon"
         /></a>
       </div>

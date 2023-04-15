@@ -20,7 +20,7 @@
 </html>
 
 
-<body>
+<body id="body">
 	<main class="main">
 		<section class="mainSection">
   <header class="header">
