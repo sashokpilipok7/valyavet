@@ -24,7 +24,7 @@
         <p class="text">Все права защищены © 2023</p>
       </div>
       <div class="footer__col footer__colOfferta">
-        <a href="#" class="link">Публичная оферта</a>
+        <a href="/offerta" class="link">Публичная оферта</a>
       </div>
       <div class="footer__col footer__colArrow">
         <div class="footer__socLinks">

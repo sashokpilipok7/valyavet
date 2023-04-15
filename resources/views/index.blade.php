@@ -1,4 +1,4 @@
-@extends('layouts.main')
+@extends('layouts.main2')
 
  @section('main-container')
 
@@ -89,7 +89,7 @@
   </div>
 </section>
 
-		<section class="teamSection">
+		<section class="teamSection" id="team">
   <div class="container">
     <h3 class="title title-withDot">Наша команда</h3>
     <!-- <div class="slider">
@@ -271,16 +271,16 @@
           смотреть все симптомы
         </button>
         <div class="fullWidth">
-          <button class="button whenSection__linkButton">
+          <a href="/#feedback_form" class="button whenSection__linkButton">
             Записаться на приём
-          </button>
+          </a>
         </div>
       </div>
     </div>
   </div>
 </section>
 
-		<section class="newsSection">
+		<section class="newsSection" id="news">
   <div class="container">
     <h3 class="title title-withDot">Новости и акции</h3>
     <!-- <div class="newsSection__row">
@@ -396,7 +396,7 @@
   </div>
 </section>
 
-		<section class="userFeedbacksSection">
+		<section class="userFeedbacksSection" id="feedback">
   <div class="container">
     <h3 class="title title-withDot">Отзывы</h3>
     <button class="userFeedbacksSection__button">
@@ -565,7 +565,7 @@
 </section>
 
 
-		<section class="feedbacksection">
+		<section class="feedbacksection" id="feedback_form">
   <div class="container">
     <h3 class="title title-withDot">Предварительная запись</h3>
     <p class="text feedbacksection__text">
