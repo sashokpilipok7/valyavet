@@ -244,7 +244,13 @@
         />
       </div>
       <div class="whenSection__right">
-        <div class="whenSection__item">Вялое состояние</div>
+        <?php
+             $evidences = DB::table('evidence')->get();
+
+            foreach ($evidences as $evid)
+            {?>
+                 <div class="whenSection__item"><?= $evid->title;?></div>
+            <?php }?>
         <div class="whenSection__item">Отсутсвие аппетита</div>
         <div class="whenSection__item">Обильные выделенияиз глаз/носа/ушей</div>
         <div class="whenSection__item">
@@ -311,8 +317,6 @@
              $posts = DB::table('posts')->get();
 
             foreach ($posts as $post)
-            // var_dump($post);
-            // C:\Users\User\projects\laravel\valyavet\storage\app\public\i9fmuzQI7kMqDDVtVTn2oo2vni8ASC-metacG9zdDEuanBn-.jpg
             {?>
                   <div class="slider__item">
                     <div class="card">
