@@ -6,14 +6,15 @@
                $posts = DB::table('posts')->get();
 
               foreach ($posts as $post)
-              {?>
+              {
+                ?>
                     <div class="slider__item">
                       <div class="card">
-                        <img src="../../img/news1.jpg" alt="" class="card__image image" />
+                        <img src="/storage/<?= $post->image ?>" alt="" class="card__image image" />
                         <div class="card__content">
                           <p class="text-s"><?= $post->title;?></p>
                           <p class="text-s date"><?= $post->created_at ?></p>
-                          <a href="#" class="button newsSection__hoverButton"
+                          <a href="/post?id=<?= $post->id;?>" class="button newsSection__hoverButton"
                             >Читать статью</a
                           >
                         </div>
