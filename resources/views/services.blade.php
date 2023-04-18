@@ -1,15 +1,23 @@
-@extends('layouts.main')
+<?php
+$pages = DB::table('pages')->get();
+
+foreach ($pages as $page)
+{
+   if($page->name == 'services'){
+   ?>
+
+@extends('layouts.main',  ['title' => $page->title, 'description' => $page->desctiption])
 
  @section('main-container')
 			<div class="breadcrums">
 				<a href="/" class="link breadcrums__link">Главная</a>
 				<hr class="breadcrums__hr">
-				<p class="breadcrums__text">Услуги и цены</p>
+				<p class="breadcrums__text">{{ $page->title }}</p>
 			</div>
 			</div>
         <section class="servicesAndPrice">
   <div class="container">
-    <h3 class="title title-withDot">Услуги и цены</h3>
+    <h3 class="title title-withDot">{{ $page->title }}</h3>
     <div class="servicesAndPrice__row">
       <div class="servicesAndPrice__left">
         <button class="servicesAndPrice__button">Анализы</button>
@@ -51,6 +59,8 @@
     </div>
   </div>
 </section>
+
+<?php }}?>
 
 	</main>
 @endsection

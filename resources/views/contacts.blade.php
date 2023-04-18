@@ -13,12 +13,12 @@ foreach ($pages as $page)
 			<div class="breadcrums">
 				<a href="/" class="link breadcrums__link">Главная</a>
 				<hr class="breadcrums__hr">
-				<p class="breadcrums__text">Контакты</p>
+				<p class="breadcrums__text">{{ $page->title }}</p>
 			</div>
 			</div>
         <section class="contactsSection">
   <div class="container">
-    <h3 class="title title-withDot">Контакты</h3>
+    <h3 class="title title-withDot">{{ $page->title }}</h3>
     <div class="contactsSection__textRow">
       <div class="contactsSection__textCol">
         <h4 class="contactsSection__title">телефон для связи:</h4>

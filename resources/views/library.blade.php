@@ -1,16 +1,25 @@
-@extends('layouts.main')
+<?php
+$pages = DB::table('pages')->get();
+
+foreach ($pages as $page)
+{
+   if($page->name == 'library'){
+    var_dump($pages);
+   ?>
+
+@extends('layouts.main',  ['title' => $page->title, 'description' => $page->desctiption])
 
  @section('main-container')
 
 			<div class="breadcrums">
 				<a href="/" class="link breadcrums__link">Главная</a>
 				<hr class="breadcrums__hr">
-				<p class="breadcrums__text">Библиотека</p>
+				<p class="breadcrums__text">{{ $page->title }}</p>
 			</div>
 			</div>
 		<section class="library">
 	<div class="container library__container">
-		<h2 class="title title-m title-withDot">Библиотека</h2>
+		<h2 class="title title-m title-withDot">{{ $page->title }}</h2>
 		<div class="library__buttons">
 			<button class="button__category">
 				<svg width="19" height="12" viewBox="0 0 23 15" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -104,6 +113,7 @@
 		<button class="button">показать больше</button>
 	</div>
 </section>
+<?php }}?>
 
 @include('layouts.form')
 

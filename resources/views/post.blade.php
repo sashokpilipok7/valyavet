@@ -1,4 +1,12 @@
-@extends('layouts.main')
+<?php
+$pages = DB::table('pages')->get();
+
+foreach ($pages as $page)
+{
+   if($page->name == 'post'){
+   ?>
+
+@extends('layouts.main',  ['title' => $page->title, 'description' => $page->desctiption])
 
  @section('main-container')
 
@@ -65,6 +73,8 @@
   @include('layouts.news');
 
 </section>
+
+<?php }}?>
 
 	</main>
 @endsection

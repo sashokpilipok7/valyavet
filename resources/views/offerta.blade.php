@@ -1,16 +1,24 @@
-@extends('layouts.main')
+<?php
+$pages = DB::table('pages')->get();
+
+foreach ($pages as $page)
+{
+   if($page->name == 'offerta'){
+   ?>
+
+@extends('layouts.main',  ['title' => $page->title, 'description' => $page->desctiption])
 
  @section('main-container')
 
 			<div class="breadcrums">
 				<a href="/" class="link breadcrums__link">Главная</a>
 				<hr class="breadcrums__hr">
-				<p class="breadcrums__text">Офферта</p>
+				<p class="breadcrums__text">{{ $page->title }}</p>
 			</div>
 			</div>
         <section class="offertaSection">
   <div class="container">
-    <h3 class="title title-withDot">Публичная офферта</h3>
+    <h3 class="title title-withDot">{{ $page->title }}</h3>
     <p class="text text-xl">
       <span class="offertaSection__title">ДОГОВОР-ОФЕРТА</span> на оказание
       платных ветеринарных услуг г. Химки ИП Голованова Анна Алексеевна (ОГРНИП:
@@ -326,6 +334,7 @@
     </p>
   </div>
 </section>
+<?php }}?>
 
 	</main>
 	@endsection
