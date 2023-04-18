@@ -2,10 +2,18 @@
 
  @section('main-container')
 
+ <?php
+ $pages = DB::table('pages')->get();
+
+foreach ($pages as $page)
+{
+    if($page->name == 'aboutUs'){
+
+    ?>
 			<div class="breadcrums">
 				<a href="/" class="link breadcrums__link">Главная</a>
 				<hr class="breadcrums__hr">
-				<p class="breadcrums__text">О нас</p>
+				<p class="breadcrums__text"><?= $page->title ?></p>
 			</div>
 			</div>
 		<section class="aboutSection">
@@ -13,22 +21,11 @@
     <div class="aboutSection__left">
       <img src="../../img/about-line.png" alt="" class="aboutSection__line" />
       <h2 class="title title-xl">
-        Ветеринарная <br />
-        клиника VoLYAVET
+        <?= $page->h1; ?>
       </h2>
       <p class="text text-xs">
-        VolyaVet – это больше, чем просто ветеринарная клиника. Мы – семья, ваша
-        поддержка и опора во всём, что связано с вашими питомцами. <br />
-        У нас индивидуальный подход к каждому пациенту и владельцу. Здесь
-        выслушают, поддержат и помогут, ведь мы понимаем ту связь, которая
-        существует между питомцем и его владельцем.
-        <br /><br />
-        Мы предоставляем спектр самых важных услуг: терапевтических,
-        хирургических, стоматологических, услуг по уходу и многое другое. <br />
-        Наши специалисты регулярно повышают свои навыки, чтобы оказывать только
-        качественную ветеринарную помощь.
+        <?= $page->content;?>
       </p>
-
       <div class="textGroup">
         <div class="text text-s">
           Профессиональные<br />
@@ -120,6 +117,8 @@
     </div>
   </div>
 </section>
+
+<?php }}?>
 
 @include('layouts.form')
 
