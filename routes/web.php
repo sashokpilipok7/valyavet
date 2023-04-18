@@ -1,7 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\CallBackController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -40,7 +40,5 @@ Route::get('/services', function () {
 Route::get('/search', function () {
     return view('search');
 });
-Route::get('/thanks', function () {
-    return view('thanks');
-});
+Route::post('/thanks', [CallBackController::class, 'thanks'])->name('thanks');
 
