@@ -1,4 +1,12 @@
-@extends('layouts.main')
+<?php
+$pages = DB::table('pages')->get();
+
+foreach ($pages as $page)
+{
+   if($page->name == 'contacts'){
+   ?>
+
+@extends('layouts.main',  ['title' => $page->title, 'description' => $page->desctiption])
 
  @section('main-container')
 
@@ -82,6 +90,7 @@
     </div>
   </div>
 </section>
+<?php }} ?>
 
 	</main>
 @endsection

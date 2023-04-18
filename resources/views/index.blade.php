@@ -1,4 +1,13 @@
-@extends('layouts.main2')
+<?php
+$pages = DB::table('pages')->get();
+
+foreach ($pages as $page)
+{
+   if($page->name == 'main'){
+
+   ?>
+
+@extends('layouts.main2',  ['title' => $page->title, 'description' => $page->desctiption])
 
  @section('main-container')
 
@@ -433,6 +442,7 @@
     </div>
   </div>
 </section>
+<?php }}?>
 
 
 @include('layouts.form')

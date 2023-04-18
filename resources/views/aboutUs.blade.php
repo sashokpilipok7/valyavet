@@ -1,15 +1,15 @@
-@extends('layouts.main')
-
- @section('main-container')
-
- <?php
- $pages = DB::table('pages')->get();
+<?php
+$pages = DB::table('pages')->get();
 
 foreach ($pages as $page)
 {
-    if($page->name == 'aboutUs'){
+   if($page->name == 'aboutUs'){
+    echo $page->title;
+   ?>
 
-    ?>
+@extends('layouts.main',  ['title' => $page->title, 'description' => $page->desctiption])
+
+ @section('main-container')
 			<div class="breadcrums">
 				<a href="/" class="link breadcrums__link">Главная</a>
 				<hr class="breadcrums__hr">
