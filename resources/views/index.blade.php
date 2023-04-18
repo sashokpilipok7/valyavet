@@ -126,7 +126,7 @@ foreach ($pages as $page)
             Сейчас Анна – владелица и главный врач клиники. Начала работать по
             специализации в Московском зоопарке ещё будучи студенткой.
           </div>
-          <a href="#" class="button">Записаться</a>
+          <a href="/#feedback_form" class="button">Записаться</a>
         </div>
       </div>
       <div class="slider__item">
