@@ -16,6 +16,7 @@
       type="text/css"
       href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
     />
+    @vite(['resources/js/app.js'])
   </head>
 </html>
 
@@ -54,11 +55,7 @@
             ><a href="/contacts" class="navLink">Контакты</a>
           </nav>
     </div>
-    <div class="header__col">
-      <div class="header__search">
-        <input type="text" class="header__input" placeholder="Поиск" />
-        <img src="../../img/search.svg" alt="" class="header__searchIcon" />
-      </div>
-    </div>
+
+    @include('layouts.search')
   </div>
 </header>

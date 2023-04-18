@@ -54,11 +54,6 @@
         ><a href="/contacts" class="navLink">Контакты</a>
       </nav>
     </div>
-    <div class="header__col">
-      <div class="header__search">
-        <input type="text" class="header__input" placeholder="Поиск" />
-        <img src="../../img/search.svg" alt="" class="header__searchIcon" />
-      </div>
-    </div>
+    @include('layouts.search')
   </div>
 </header>

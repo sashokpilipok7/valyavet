@@ -11,31 +11,43 @@
 
             <section class="searchSection">
                 <div class="container">
-                  <h3 class="title title-withDot">Найдено - 5</h3>
+                  <h3 class="title title-withDot">Найдено - {{$posts->count()}}</h3>
+                  @foreach ($posts as $post)
                   <div class="searchSection__row">
                     <div class="searchSection__col">
                       <div class="searchSection__textBlock">
-                        <img src="../../img/cat-card.jpg" alt="" class="card__image image" />
+                        <img src="/storage/{{$post->image}}" alt="" class="card__image image" />
                         <div>
                           <h4 class="searchSection__title">
-                            Как часто нужно стричь когти своему коту?
+                            {{$post->title}}
                           </h4>
+                          <style>
+                            .searchSection__text {
+                                display: -webkit-box;
+                                max-width: 100%;
+                                font-size: 20px;
+                                -webkit-line-clamp: 4; /* количество строк */
+                                -webkit-box-orient: vertical;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                            }
+                          </style>
                           <p class="searchSection__text">
-                            VolyaVet – это больше, чем просто ветеринарная клиника. Мы –
-                            семья, ваша поддержка и опора во всём, что связано с вашими
-                            питомцами. У нас индивидуальный подход к каждому пациенту и
-                            владельцу...
+                            {!!$post->body!!}
                           </p>
                         </div>
                       </div>
                       <div class="searchSection__dateBlock">
-                        <p class="searchSection__date">16.06.23</p>
+
+                        <p class="searchSection__date">{{-- тут можна замынити на created_at час створення  --}} {{$post->updated_at->format('d.m.Y')}}</p>
                       </div>
                       <div class="searchSection__buttonBlock">
                         <a href="#" class="button">смотреть</a>
                       </div>
                     </div>
                   </div>
+                  @endforeach
+
                 </div>
               </section>
 
