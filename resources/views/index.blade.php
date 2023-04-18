@@ -111,6 +111,23 @@ foreach ($pages as $page)
           </p>
           <span class="teamSection__itemSpan">Стаж - 10+ лет</span>
         </div>
+        <div class="teamSection__hoverItem">
+          <div class="slider__textBlock">
+            <h5 class="teamSection__itemTitle">Анна Голованова</h5>
+            <p class="teamSection__itemText">
+              Главный врач, ветеринарныйврач-терапевт, хирург, стоматолог
+            </p>
+            <span class="teamSection__itemSpan">Стаж - 10+ лет</span>
+          </div>
+          <div class="teamSection__contentItem">
+            Два высших образования: ветеринарное и биологическое, на постоянной
+            основе повышает квалификацию. Имеет научные статьи. <br />
+            <br />
+            Сейчас Анна – владелица и главный врач клиники. Начала работать по
+            специализации в Московском зоопарке ещё будучи студенткой.
+          </div>
+          <a href="#" class="button">Записаться</a>
+        </div>
       </div>
       <div class="slider__item">
         <img src="../../img/team2.jpg" alt="" class="slider__img" />
