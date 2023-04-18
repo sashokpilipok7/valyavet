@@ -101,47 +101,6 @@ foreach ($pages as $page)
 		<section class="teamSection" id="team">
   <div class="container">
     <h3 class="title title-withDot">Наша команда</h3>
-    <!-- <div class="slider">
-      <div class="slider__item">
-        <img src="../../img/team1.jpg" alt="" class="slider__img" />
-        <div class="slider__textBlock">
-          <h5 class="teamSection__itemTitle">Анна Голованова</h5>
-          <p class="teamSection__itemText">
-            Главный врач, ветеринарныйврач-терапевт, хирург, стоматолог
-          </p>
-          <span class="teamSection__itemSpan">Стаж - 10+ лет</span>
-        </div>
-      </div>
-      <div class="slider__item">
-        <img src="../../img/team2.jpg" alt="" class="slider__img" />
-        <div class="slider__textBlock">
-          <h5 class="teamSection__itemTitle">Виктория Целобёнок</h5>
-          <p class="teamSection__itemText">
-            Ветеринарный врач - терапевт,хирург, специалист УЗД,преподаватель
-          </p>
-          <span class="teamSection__itemSpan">Стаж - 10+ лет</span>
-        </div>
-      </div>
-      <div class="slider__item">
-        <img src="../../img/team3.jpg" alt="" class="slider__img" />
-        <div class="slider__textBlock">
-          <h5 class="teamSection__itemTitle">Александра Редькина</h5>
-          <p class="teamSection__itemText">
-            Эксперт по коррекции поведения,кинолог, зоопсихолог
-          </p>
-          <span class="teamSection__itemSpan">Стаж - 6+ лет</span>
-        </div>
-      </div>
-      <div class="slider__item">
-        <img src="../../img/team4.jpg" alt="" class="slider__img" />
-        <div class="slider__textBlock">
-          <h5 class="teamSection__itemTitle">Дарья Голякова</h5>
-          <p class="teamSection__itemText">Ассистент ветеринарного врача</p>
-          <span class="teamSection__itemSpan">Стаж - 2 года</span>
-        </div>
-      </div>
-      <div class="slider__arrows">arrow ... arrow</div>
-    </div> -->
     <div class="slider team-slider">
       <div class="slider__item">
         <img src="../../img/team1.jpg" alt="" class="slider__img" />
