@@ -26,7 +26,7 @@
 			<header class="header">
   <div class="header__row">
     <div class="header__col">
-      <img src="../../img/logo.png" alt="" class="header__logo" />
+        <a href="/"> <img src="../../img/logo.png" alt="" class="header__logo" /></a>
       <div class="dropdown">
         <button class="dropbtn">
           Меню
