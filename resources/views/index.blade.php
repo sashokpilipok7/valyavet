@@ -12,13 +12,19 @@ foreach ($pages as $page)
  @section('main-container')
 
  <div class="mainSection__lineBlock mainSection__lineBlock-mobile">
-    <img src="../../img/telegram.svg" alt="" class="icon" />
-    <img src="../../img/viber.svg" alt="" class="icon" />
+    @foreach (\App\Models\SocialLink::all() as $socialLink)
+      <a href="{{$socialLink->link}}"
+          ><img src="../../img/{{$socialLink->title}}.svg" alt="" class="icon"
+      /></a>
+    @endforeach
   </div>
   <div class="container mainSection__container">
     <div class="mainSection__lineBlock mainSection__lineBlock-desctop">
-      <img src="../../img/telegram.svg" alt="" class="icon" />
-      <img src="../../img/viber.svg" alt="" class="icon" />
+        @foreach (\App\Models\SocialLink::all() as $socialLink)
+            <a href="{{$socialLink->link}}"
+                ><img src="../../img/{{$socialLink->title}}.svg" alt="" class="icon"
+            /></a>
+        @endforeach
     </div>
     <div class="mainSection__left">
       <p class="text text-xs">
