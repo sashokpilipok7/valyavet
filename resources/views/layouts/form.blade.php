@@ -10,9 +10,10 @@
           <img src="../../img/feedback.png" alt="" class="image image-br" />
         </div>
         <div class="feedbacksection__right">
-          <form class="feedbacksection__form" action="#">
-            <input type="text" class="input" placeholder="Ваше имя" />
-            <input type="tel" class="input" placeholder="Телефон" />
+          <form class="feedbacksection__form" method="post" action="{{route('thanks')}}">
+            @csrf
+            <input type="text" name="name" class="input" placeholder="Ваше имя" />
+            <input type="tel" name="phone" class="input" placeholder="Телефон" />
             <textarea
               name="message"
               id=""
