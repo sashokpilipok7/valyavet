@@ -5,3 +5,20 @@
 .teamSection .slider__item:hover .teamSection__hoverItem .teamSection__contentItem {
     overflow: hidden!important;
 }
+
+.mainSection__left .title-xl span {
+    font-family: gothampro_bold!important;
+
+}
+
+.servicesAndPrice__button{
+    width: calc(50% - 10px);
+    margin: 5px;
+}
+
+@media screen and (min-width: 1440px){
+.servicesAndPrice__button {
+    width: 100%;
+    margin: 7.5px;
+}
+}
