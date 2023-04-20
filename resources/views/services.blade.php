@@ -42,30 +42,21 @@ foreach ($pages as $page)
           alt=""
           class="image servicesAndPrice__image"
         />
-        <style type="text/css">
-            .tg  {border-collapse:collapse;border-spacing:0;}
-            .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-              overflow:hidden;padding:10px 5px;word-break:normal;}
-            .tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
-              font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
-            .tg .tg-baqh{text-align:center;vertical-align:top}
-            .tg .tg-0lax{text-align:left;vertical-align:top}
-            </style>
             <table class="tg">
             <thead>
               <tr>
-                <th class="tg-0lax"></th>
-                <th class="tg-baqh"></th>
+                <th class="tg-0lax">Название услуги</th>
+                <th class="tg-baqh">Цена, ₽</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td class="tg-0lax"></td>
-                <td class="tg-0lax"></td>
+                <td class="tg-0lax">Вакцинация кошки без бешенства  (Биофел PCH)</td>
+                <td class="tg-0lax">1900</td>
               </tr>
               <tr>
-                <td class="tg-0lax"></td>
-                <td class="tg-0lax"></td>
+                <td class="tg-0lax">Вакцинация кошки без бешенства  (Мультифел-4)</td>
+                <td class="tg-0lax">1500</td>
               </tr>
             </tbody>
             </table>
