@@ -113,10 +113,11 @@
       </div>
       <div class="footer__col footer__colArrow">
         <div class="footer__socLinks">
-          <a href="#"
-            ><img src="../../img/telegram.svg" alt="" class="icon"
-          /></a>
-          <a href="#"><img src="../../img/viber.svg" alt="" class="icon" /></a>
+            @foreach (\App\Models\SocialLink::all() as $socialLink)
+            <a href="{{$socialLink->link}}"
+                ><img src="../../img/{{$socialLink->title}}.svg" alt="" class="icon"
+            /></a>
+          @endforeach
         </div>
         <a href="#" class="footer__arrowTop"
           ><img src="../../img/arrowtop.svg" alt="" class="icon"

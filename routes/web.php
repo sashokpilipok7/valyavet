@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\SearchController;
+use App\Http\Controllers\CallBackController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -41,7 +42,5 @@ Route::get('/services', function () {
     return view('services');
 });
 Route::get('/search', [SearchController::class, 'search'])->name('search');
-Route::get('/thanks', function () {
-    return view('thanks');
-});
+Route::post('/thanks', [CallBackController::class, 'thanks'])->name('thanks');
 
