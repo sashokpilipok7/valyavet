@@ -1,13 +1,4 @@
-<?php
-$pages = DB::table('pages')->get();
-
-foreach ($pages as $page)
-{
-   if($page->name == 'main'){
-
-   ?>
-
-@extends('layouts.main2',  ['title' => $page->title, 'description' => $page->desctiption])
+@extends('layouts.main2',  ['title' => 'Главнач', 'description' => 'Когда здоровье вашего питомца важнее всего остального' ])
 
  @section('main-container')
 
@@ -424,10 +415,9 @@ foreach ($pages as $page)
     </div>
   </div>
 </section>
-<?php }}?>
 
 
-@include('layouts.form')
+{{-- @include('layouts.form') --}}
 
 	</main>
 

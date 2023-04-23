@@ -4,7 +4,6 @@ $pages = DB::table('pages')->get();
 foreach ($pages as $page)
 {
    if($page->name == 'aboutUs'){
-    echo $page->title;
    ?>
 
 @extends('layouts.main',  ['title' => $page->title, 'description' => $page->desctiption])
