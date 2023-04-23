@@ -1,4 +1,4 @@
-@extends('layouts.main2',  ['title' => 'Главнач', 'description' => 'Когда здоровье вашего питомца важнее всего остального' ])
+@extends('layouts.main',  ['title' => 'Главнач', 'description' => 'Когда здоровье вашего питомца важнее всего остального' ])
 
  @section('main-container')
 
@@ -419,7 +419,7 @@
 
 {{-- @include('layouts.form') --}}
 
-    </section>
+</div>
 	</main>
 
 @endsection
