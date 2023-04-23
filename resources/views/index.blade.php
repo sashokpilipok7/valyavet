@@ -2,7 +2,7 @@
 
  @section('main-container')
 
- {{-- <div class="mainSection__lineBlock mainSection__lineBlock-mobile">
+ <div class="mainSection__lineBlock mainSection__lineBlock-mobile">
     @foreach (\App\Models\SocialLink::all() as $socialLink)
       <a href="{{$socialLink->link}}"
           ><img src="../../img/{{$socialLink->title}}.svg" alt="" class="icon"
@@ -417,7 +417,7 @@
 </section> --}}
 
 
-{{-- @include('layouts.form') --}}
+{{-- @include('layouts.form')
 
 </div>
 	</main>
