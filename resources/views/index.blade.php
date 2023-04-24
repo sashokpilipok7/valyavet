@@ -95,107 +95,44 @@
   </div>
 </section>
 
+
+
 		<section class="teamSection" id="team">
   <div class="container">
     <h3 class="title title-withDot">Наша команда</h3>
     <div class="slider team-slider">
-      <div class="slider__item">
-        <img src="../../img/team1.jpg" alt="" class="slider__img" />
-        <div class="slider__textBlock">
-          <h5 class="teamSection__itemTitle">Анна Голованова</h5>
-          <p class="teamSection__itemText">
-            Главный врач, ветеринарныйврач-терапевт, хирург, стоматолог
-          </p>
-          <span class="teamSection__itemSpan">Стаж - 10+ лет</span>
-        </div>
-        <div class="teamSection__hoverItem">
-          <div class="slider__textBlock">
-            <h5 class="teamSection__itemTitle">Анна Голованова</h5>
+
+        <?php
+        $teams = DB::table('teams')->get();
+
+       foreach ($teams as $person)
+       {?>
+
+        <div class="slider__item">
+            <img src="../../img/team1.jpg" alt="" class="slider__img" />
+            <div class="slider__textBlock">
+            <h5 class="teamSection__itemTitle"><?= $person->title; ?></h5>
             <p class="teamSection__itemText">
-              Главный врач, ветеринарныйврач-терапевт, хирург, стоматолог
+                <?= $person->body; ?>
             </p>
-            <span class="teamSection__itemSpan">Стаж - 10+ лет</span>
-          </div>
-          <div class="teamSection__contentItem">
-            Два высших образования: ветеринарное и биологическое, на постоянной
-            основе повышает квалификацию. Имеет научные статьи. <br />
-            <br />
-            Сейчас Анна – владелица и главный врач клиники. Начала работать по
-            специализации в Московском зоопарке ещё будучи студенткой.
-          </div>
-          <a href="/#feedback_form" class="button">Записаться</a>
+            <span class="teamSection__itemSpan"><?= $person->exp; ?></span>
+            </div>
+            <div class="teamSection__hoverItem">
+            <div class="slider__textBlock">
+                <h5 class="teamSection__itemTitle"><?= $person->title; ?></h5>
+                <p class="teamSection__itemText">
+                    <?= $person->body; ?>
+                </p>
+                <span class="teamSection__itemSpan"><?= $person->exp; ?></span>
+            </div>
+            <div class="teamSection__contentItem">
+            <?= $person->description; ?>
+            </div>
+            <a href="/#feedback_form" class="button">Записаться</a>
+            </div>
         </div>
-      </div>
-      <div class="slider__item">
-        <img src="../../img/team2.jpg" alt="" class="slider__img" />
-        <div class="slider__textBlock">
-          <h5 class="teamSection__itemTitle">Виктория Целобёнок</h5>
-          <p class="teamSection__itemText">
-            Ветеринарный врач - терапевт,хирург, специалист УЗД,преподаватель
-          </p>
-          <span class="teamSection__itemSpan">Стаж - 10+ лет</span>
-        </div>
-      </div>
-      <div class="slider__item">
-        <img src="../../img/team3.jpg" alt="" class="slider__img" />
-        <div class="slider__textBlock">
-          <h5 class="teamSection__itemTitle">Виктория Целобёнок</h5>
-          <p class="teamSection__itemText">
-            Ветеринарный врач - терапевт,хирург, специалист УЗД,преподаватель
-          </p>
-          <span class="teamSection__itemSpan">Стаж - 10+ лет</span>
-        </div>
-      </div>
-      <div class="slider__item">
-        <img src="../../img/team4.jpg" alt="" class="slider__img" />
-        <div class="slider__textBlock">
-          <h5 class="teamSection__itemTitle">Виктория Целобёнок</h5>
-          <p class="teamSection__itemText">
-            Ветеринарный врач - терапевт,хирург, специалист УЗД,преподаватель
-          </p>
-          <span class="teamSection__itemSpan">Стаж - 10+ лет</span>
-        </div>
-      </div>
-      <div class="slider__item">
-        <img src="../../img/team4.jpg" alt="" class="slider__img" />
-        <div class="slider__textBlock">
-          <h5 class="teamSection__itemTitle">Виктория Целобёнок</h5>
-          <p class="teamSection__itemText">
-            Ветеринарный врач - терапевт,хирург, специалист УЗД,преподаватель
-          </p>
-          <span class="teamSection__itemSpan">Стаж - 10+ лет</span>
-        </div>
-      </div>
-      <div class="slider__item">
-        <img src="../../img/team4.jpg" alt="" class="slider__img" />
-        <div class="slider__textBlock">
-          <h5 class="teamSection__itemTitle">Виктория Целобёнок</h5>
-          <p class="teamSection__itemText">
-            Ветеринарный врач - терапевт,хирург, специалист УЗД,преподаватель
-          </p>
-          <span class="teamSection__itemSpan">Стаж - 10+ лет</span>
-        </div>
-      </div>
-      <div class="slider__item">
-        <img src="../../img/team4.jpg" alt="" class="slider__img" />
-        <div class="slider__textBlock">
-          <h5 class="teamSection__itemTitle">Виктория Целобёнок</h5>
-          <p class="teamSection__itemText">
-            Ветеринарный врач - терапевт,хирург, специалист УЗД,преподаватель
-          </p>
-          <span class="teamSection__itemSpan">Стаж - 10+ лет</span>
-        </div>
-      </div>
-      <div class="slider__item">
-        <img src="../../img/team4.jpg" alt="" class="slider__img" />
-        <div class="slider__textBlock">
-          <h5 class="teamSection__itemTitle">Виктория Целобёнок</h5>
-          <p class="teamSection__itemText">
-            Ветеринарный врач - терапевт,хирург, специалист УЗД,преподаватель
-          </p>
-          <span class="teamSection__itemSpan">Стаж - 10+ лет</span>
-        </div>
-      </div>
+
+       <?php }?>
     </div>
   </div>
 </section>
@@ -414,10 +351,10 @@
       </div>
     </div>
   </div>
-</section> --}}
+</section>
 
 
-{{-- @include('layouts.form')
+ @include('layouts.form')
 
 </div>
 	</main>
