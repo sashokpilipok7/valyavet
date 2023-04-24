@@ -109,7 +109,7 @@
        {?>
 
         <div class="slider__item">
-            <img src="../../img/team1.jpg" alt="" class="slider__img" />
+            <img src="/storage/<?= $person->image ?>" alt="" class="slider__img" />
             <div class="slider__textBlock">
             <h5 class="teamSection__itemTitle"><?= $person->title; ?></h5>
             <p class="teamSection__itemText">
