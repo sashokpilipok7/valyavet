@@ -31,7 +31,7 @@
         Ветеринарная <br />
         клиника <span>VоLYAVET</span>
       </h2>
-      <button class="button">Записаться на приём</button>
+      <a href="/#feedback_form" class="button">Записаться на приём</a>
       <div class="textGroup">
         <div class="text">Профессиональные врачи с огромным опытом</div>
         <div class="text">Новое современное оборудование</div>
@@ -91,7 +91,7 @@
         <p class="cardTitle">Стоматология</p>
       </div>
     </div>
-    <button class="button">Список всех услуг</button>
+    <a href="/services" class="button">Список всех услуг</a>
   </div>
 </section>
 
