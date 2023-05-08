@@ -5,3 +5,61 @@
 .teamSection .slider__item:hover .teamSection__hoverItem .teamSection__contentItem {
     overflow: hidden!important;
 }
+
+.mainSection__left .title-xl span {
+    font-family: gothampro_bold!important;
+
+}
+
+.servicesAndPrice__button{
+    width: calc(50% - 10px);
+    margin: 5px;
+}
+
+.tg  {border-spacing:12px;
+    width: 100%;
+    margin-bottom: 50px;}
+.tg td{
+    background: rgba(61, 77, 137, 0.3);
+    border: 1px solid #FFFFFF;
+    border-radius: 10px;
+
+      overflow:hidden;
+      padding:18px 10px;
+      word-break:normal;
+      font-weight: 400;
+    font-size: 14px;
+    line-height: 135%;
+    /* identical to box height, or 19px */
+
+    text-align: center;
+
+    /* Белый */
+
+    color: #F8F8F8;
+}
+.tg th{
+    background: rgba(61, 77, 137, 0.3);
+border: 1px solid #FFFFFF;
+border-radius: 10px;
+
+  overflow:hidden;
+  padding:18px 10px;
+  word-break:normal;
+  font-weight: 400;
+font-size: 14px;
+line-height: 135%;
+/* identical to box height, or 19px */
+text-align: center;
+
+/* Белый */
+
+color: #F8F8F8;
+}
+
+@media screen and (min-width: 1440px){
+.servicesAndPrice__button {
+    width: 100%;
+    margin: 7.5px;
+}
+}

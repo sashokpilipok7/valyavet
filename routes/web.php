@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\SearchController;
 use App\Http\Controllers\CallBackController;
 /*
 |--------------------------------------------------------------------------
@@ -16,6 +17,9 @@ use App\Http\Controllers\CallBackController;
 Route::get('/', function () {
     return view('index');
 });
+
+Route::get('/search/{query}', [SearchController::class, 'search'])->name('search');
+
 Route::get('/aboutUs', function () {
     return view('aboutUs');
 });
@@ -37,8 +41,6 @@ Route::get('/post', function () {
 Route::get('/services', function () {
     return view('services');
 });
-Route::get('/search', function () {
-    return view('search');
-});
+Route::get('/search', [SearchController::class, 'search'])->name('search');
 Route::post('/thanks', [CallBackController::class, 'thanks'])->name('thanks');
 

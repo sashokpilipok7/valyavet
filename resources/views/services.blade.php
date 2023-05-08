@@ -20,7 +20,13 @@ foreach ($pages as $page)
     <h3 class="title title-withDot">{{ $page->title }}</h3>
     <div class="servicesAndPrice__row">
       <div class="servicesAndPrice__left">
-        <button class="servicesAndPrice__button">Анализы</button>
+        <?php
+        $categories = DB::table('categories')->get();
+
+       foreach ($categories as $cat)
+       {?>
+            <button class="servicesAndPrice__button"><?= $cat->title?></button>
+       <?php }?>
       </div>
       <div class="servicesAndPrice__right">
         <h3 class="servicesAndPrice__title">вакцинации</h3>
@@ -36,7 +42,25 @@ foreach ($pages as $page)
           alt=""
           class="image servicesAndPrice__image"
         />
-        <table class="servicesAndPrice__table">
+            <table class="tg">
+            <thead>
+              <tr>
+                <th class="tg-0lax">Название услуги</th>
+                <th class="tg-baqh">Цена, ₽</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="tg-0lax">Вакцинация кошки без бешенства  (Биофел PCH)</td>
+                <td class="tg-0lax">1900</td>
+              </tr>
+              <tr>
+                <td class="tg-0lax">Вакцинация кошки без бешенства  (Мультифел-4)</td>
+                <td class="tg-0lax">1500</td>
+              </tr>
+            </tbody>
+            </table>
+        {{-- <table class="servicesAndPrice__table">
           <img
             src="../../img/table.png"
             alt=""
@@ -47,7 +71,7 @@ foreach ($pages as $page)
           src="../../img/tableMobile.png"
           alt=""
           class="image servicesAndPrice__tableMobile"
-        />
+        /> --}}
         <div class="servicesAndPrice__bottomRow">
           <p class="text">
             Стоимость услуг на сайте не является публичной офертой и может
